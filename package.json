@@ -1,0 +1,12 @@
+{
+  "name": "web-compliance-checker",
+  "version": "2.0.0",
+  "description": "AI-based Web Compliance Checker with Python/FastAPI backend",
+  "scripts": {
+    "dev:backend": "cd backend && python main.py",
+    "dev:frontend": "cd frontend && npm run dev"
+  },
+  "keywords": ["accessibility", "compliance", "wcag", "fastapi", "python"],
+  "author": "",
+  "license": "MIT"
+}

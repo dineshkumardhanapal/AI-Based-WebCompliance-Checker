@@ -1,0 +1,35 @@
+/* CSS Variables used by component CSS files */
+:root {
+  /* Color Palette */
+  --primary: #2563EB; /* Blue 600 */
+  --primary-dark: #1E40AF; /* Blue 800 - Secondary */
+  --primary-gradient: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+  --primary-gradient-hover: linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%);
+  --secondary-gradient: linear-gradient(135deg, #3b82f6 0%, #2563EB 100%);
+  
+  /* Success Colors */
+  --success-gradient: linear-gradient(135deg, #22c55e 0%, #16A34A 100%);
+  --success-solid: #16A34A; /* Green 600 */
+  
+  /* Error Colors */
+  --error-gradient: linear-gradient(135deg, #ef4444 0%, #DC2626 100%);
+  --error-solid: #DC2626; /* Red 600 */
+  
+  /* Warning Colors */
+  --warning-gradient: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  --warning-solid: #f59e0b;
+  
+  /* Text Colors */
+  --text-primary: #0F172A; /* Slate 900 */
+  --text-secondary: #475569; /* Slate 600 */
+  --text-light: #ffffff;
+  --text-muted: #94a3b8; /* Slate 400 */
+  
+  /* Border & Shadows */
+  --border-color: rgba(37, 99, 235, 0.2); /* Blue 600 with opacity */
+  --shadow-sm: 0 2px 4px rgba(37, 99, 235, 0.1);
+  --shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2), 0 2px 4px -1px rgba(37, 99, 235, 0.1);
+  --shadow-lg: 0 20px 25px -5px rgba(37, 99, 235, 0.2), 0 10px 10px -5px rgba(37, 99, 235, 0.1);
+  --shadow-xl: 0 25px 50px -12px rgba(37, 99, 235, 0.3);
+  --shadow-glow: 0 0 20px rgba(37, 99, 235, 0.4);
+}

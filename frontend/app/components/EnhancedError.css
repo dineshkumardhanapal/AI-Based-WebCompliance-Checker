@@ -1,0 +1,166 @@
+.enhanced-error {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
+  border: 2px solid var(--error-solid);
+  border-left: 4px solid var(--error-solid);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  animation: shake 0.5s ease-in-out, fadeIn 0.3s ease-in;
+  text-align: center;
+}
+
+.error-icon-container {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.error-icon-container svg {
+  color: var(--error-solid);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.error-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--error-solid);
+  margin-bottom: 0.75rem;
+}
+
+.error-message {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.error-suggestion {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.error-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.error-retry-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--error-solid);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.error-retry-button:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.error-retry-button:active {
+  transform: translateY(0);
+}
+
+.error-retry-button svg {
+  animation: spin 2s linear infinite;
+}
+
+.error-troubleshooting {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(239, 68, 68, 0.2);
+  text-align: left;
+}
+
+.error-troubleshooting details {
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+.error-troubleshooting summary {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  list-style: none;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.error-troubleshooting summary::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.error-troubleshooting details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.error-troubleshooting ul {
+  padding-left: 1.5rem;
+  color: var(--text-secondary);
+  line-height: 2;
+  margin-top: 0.5rem;
+}
+
+.error-troubleshooting li {
+  margin-bottom: 0.25rem;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
